@@ -13,7 +13,8 @@ body {
 
 
 .select-box,
-.play-board {
+.play-board,
+.result-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,3 +82,89 @@ body {
     margin-left: 5px;
 
 } */
+
+.play-board {
+    display: none;
+}
+
+.play-board .details {
+    background: #ffff;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+
+.play-board .details .players {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.play-board .details span {
+
+    width: 100%;
+    color: #56baed;
+    border-radius: 5px;
+    padding: 7px 0;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: default;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.details span:first-child {
+    color: #ffff;
+}
+
+
+.details .slider {
+    position: absolute;
+    background: #56baed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.play-board .play-area {
+    margin-top: 20px;
+}
+
+.play-board section {
+    display: flex;
+}
+
+.play-board section span {
+    display: block;
+    margin: 2px;
+    height: 80px;
+    width: 80px;
+    background: #ffff;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: #56baed;
+}
+
+
+
+.result-box {
+    background: #ffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.result-box .won-text {
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+}
+
+
+.result-box .won-text p {}
